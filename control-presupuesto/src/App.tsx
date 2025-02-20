@@ -1,6 +1,10 @@
+import { useContext } from "react"
 import BudgetForm from "./components/BudgetForm.js"
+import { BudgetContext } from "./context/BudgetContext.js"
 
 function App() {
+
+  const context = useContext(BudgetContext)
 
   return (
     <>
