@@ -1,4 +1,4 @@
-import PatientForm from "./components/patientForm"
+import PatientForm from "./components/PatientForm"
 import PatientList from "./components/PatientList"
 
 
