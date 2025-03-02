@@ -21,31 +21,24 @@ export default function OrderTotals({
   const totalAmount = useMemo(() => subtotalAmount + tipAmount, [tip, order]);
 
   return (
-    <>
-      <div className="space-y-3">
-        <h2 className="font-black text-2xl">Totales y Propina:</h2>
-        <p>
-          Subtotal a Pagar: {""}
-          <span className="font-bold">{formatCurrency(subtotalAmount)}</span>
-        </p>
-
-        <p>
-          Propina: {""}
-          <span className="font-bold">{formatCurrency(tipAmount)}</span>
-        </p>
-
-        <p>
-          Total a Pagar: {""}
-          <span className="font-bold">{formatCurrency(totalAmount)}</span>
-        </p>
-      </div>
+    <div className="p-5 mt-6 bg-white shadow-sm rounded-lg border border-gray-200 space-y-4">
+      <h2 className="font-black text-2xl text-teal-700">Totales y Propina:</h2>
+      <p className="text-lg font-medium text-gray-700">
+        Subtotal a Pagar: <span className="font-bold">{formatCurrency(subtotalAmount)}</span>
+      </p>
+      <p className="text-lg font-medium text-gray-700">
+        Propina: <span className="font-bold">{formatCurrency(tipAmount)}</span>
+      </p>
+      <p className="text-lg font-medium text-gray-700">
+        Total a Pagar: <span className="font-bold">{formatCurrency(totalAmount)}</span>
+      </p>
       <button
-        className="w-full bg-black p-3 uppercase text-white font-bold mt-10 disabled:opacity-10"
+        className="w-full bg-teal-600 p-3 text-white font-bold uppercase rounded-lg hover:bg-teal-700 transition-colors disabled:opacity-50"
         disabled={totalAmount === 0}
         onClick={placeOrder}
       >
         Guardar Orden
       </button>
-    </>
+    </div>
   );
 }

@@ -9,11 +9,11 @@ type MenuItemProps = {
 export default function MenuItem({ item, addItem }: MenuItemProps) {
   return (
     <button
-      className="border-2 w-full hover:bg-teal-200 p-3 flex justify-between"
+      className="w-full flex justify-between items-center p-4 border-2 border-teal-400 rounded-lg bg-white shadow-sm hover:bg-teal-500 hover:text-white transition-colors"
       onClick={() => addItem(item)}
     >
-      <p>{item.name}</p>
-      <p className="font-black">{formatCurrency(item.price)}</p>
+      <p className="text-lg font-medium">{item.name}</p>
+      <p className="text-lg font-bold">{formatCurrency(item.price)}</p>
     </button>
   );
 }

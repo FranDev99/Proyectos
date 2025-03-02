@@ -1,10 +1,13 @@
 type CalorieDisplayProps = {
-    calories: number
-    text: string
-}
+  calories: number;
+  text: string;
+};
 
-export default function CalorieDisplay({calories, text} : CalorieDisplayProps) {
+export default function CalorieDisplay({ calories, text }: CalorieDisplayProps) {
   return (
-    <p className="text-white font-bold rounded-full grid grid-cols-1 gap-3 text-center"><span className="font-black text-6xl text-orange">{calories}</span>{text}</p>
-  )
+    <div className="flex flex-col items-center bg-orange-500 text-white p-4 rounded-lg shadow-md w-32">
+      <span className="font-black text-5xl">{calories}</span>
+      <p className="text-lg font-semibold">{text}</p>
+    </div>
+  );
 }
