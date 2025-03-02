@@ -118,3 +118,34 @@ Aprendizajes clave:
 - Creación de interfaces dinámicas con ventanas modales.
 
 - Gestión de listas de datos con IDs únicos.
+  
+**5. Gestor de Pacientes Veterinarios 🐶🐱**
+
+Tecnologías utilizadas:
+
+- Lenguajes y herramientas: React, TypeScript, Tailwind CSS.
+- Funcionalidades: React Hook Form, Zustand, useState, useEffect, Validación de formularios.
+
+Este proyecto permite gestionar la información de pacientes veterinarios mediante un formulario dinámico y validado. Se pueden agregar, editar y eliminar pacientes de manera eficiente, asegurando que la información se mantenga organizada y accesible.
+
+Las características incluyen:
+
+- Registro de pacientes con nombre, propietario, síntomas, fecha, entre otros.
+
+- Validación de datos con React Hook Form.
+
+- Gestión del estado global con Zustand para una mejor administración de los pacientes.
+
+- Persistencia de datos para mantener la información al recargar la página.
+
+- Diseño responsivo y optimizado con Tailwind CSS.
+
+Aprendizajes clave:
+
+- Manejo eficiente de formularios con React Hook Form.
+
+- Implementación de un estado global ligero con Zustand.
+
+- Validación y gestión de datos en tiempo real.
+
+- Mejora de la experiencia de usuario con un diseño claro y responsivo.
