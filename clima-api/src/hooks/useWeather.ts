@@ -1,7 +1,7 @@
 import axios from "axios"
 import { z } from "zod"
 import { SearchType } from "../types"
-import { useState } from "react"
+import { useMemo, useState } from "react"
 
 //TYPE GUARD O ASSERTION
 // function isWeatherResponse(weather: unknown): weather is Weather {
@@ -25,7 +25,7 @@ const Weather = z.object({
     })
 })
 
-type Weather = z.infer<typeof Weather>
+export type Weather = z.infer<typeof Weather>
 
 export default function useWeather() {
 
@@ -72,8 +72,11 @@ export default function useWeather() {
         }
     }
 
+    const hasWeatherData = useMemo(() => weather.name, [weather])
+
     return {
         weather,
-        fetchWeather 
+        fetchWeather,
+        hasWeatherData 
     }
 }
