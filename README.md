@@ -149,3 +149,35 @@ Aprendizajes clave:
 - Validación y gestión de datos en tiempo real.
 
 - Mejora de la experiencia de usuario con un diseño claro y responsivo.
+
+**6. Consulta de Precios de Criptomonedas y Temperatura en Diferentes Ciudades 📈💰🌦️**
+
+Tecnologías utilizadas:
+
+- Lenguajes y herramientas: React, TypeScript, CSS.
+- Funcionalidades: Zustand, Zod, Axios, API de Criptomonedas, API de temperatura, useState, useEffect.
+
+Se realizaron dos proyectos, uno consiste en la consulta de precios de criptomonedas y otro en la consulta de la temperatura en diferentes ciudades del mundo. Se hace uso de APIs externas para obtener información en tiempo real y mostrarla de forma clara e interactiva.
+
+Las características incluyen:
+
+Consulta de Criptomonedas:
+
+- Obtención de precios en tiempo real de las 20 principales criptomonedas.
+- Conversión de precios a diferentes monedas como dólar, peso colombiano, peso mexicano, euro, entre otras.
+- Validación de datos con Zod.
+- Gestión de estado global con Zustand.
+
+Consulta de la Temperatura:
+
+- Búsqueda de la temperatura actual en cualquier ciudad del mundo.
+- Validación de datos con Zod.
+- Consumo de una API de clima con Axios.
+- Gestión de estado global con Zustand.
+
+Aprendizajes clave:
+
+- Consumo de múltiples APIs externas con Axios.
+- Validación de datos con Zod para evitar errores en las consultas.
+- Uso de Zustand para la gestión de estado global.
+- Manejo de efectos y estados con useEffect y useState.
