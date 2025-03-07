@@ -1,4 +1,5 @@
 import {z} from 'zod'
-import { categoriesAPIResponseSchema } from '../schemas/recipes-schema'
+import { categoriesAPIResponseSchema, SearchFilterSchema } from '../schemas/recipes-schema'
 
 export type Categories = z.infer<typeof categoriesAPIResponseSchema>
+export type SearchFilter = z.infer<typeof SearchFilterSchema>
