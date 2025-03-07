@@ -1,5 +1,7 @@
 import {z} from 'zod'
-import { categoriesAPIResponseSchema, SearchFilterSchema } from '../schemas/recipes-schema'
+import { categoriesAPIResponseSchema, DrinkAPIResponse, DrinksAPIResponse, SearchFilterSchema } from '../schemas/recipes-schema'
 
 export type Categories = z.infer<typeof categoriesAPIResponseSchema>
 export type SearchFilter = z.infer<typeof SearchFilterSchema>
+export type Drinks = z.infer<typeof DrinksAPIResponse>
+export type Drink = z.infer<typeof DrinkAPIResponse>
