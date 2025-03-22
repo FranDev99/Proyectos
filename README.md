@@ -182,18 +182,19 @@ Aprendizajes clave:
 - Uso de Zustand para la gestión de estado global.
 - Manejo de efectos y estados con useEffect y useState.
 
-**7. Buscador de Bebidas 🍹🔎**
+**7. Buscador de Bebidas y Rectas 🍹🍖🔎**
 
 Tecnologías utilizadas:
 
 - Lenguajes y herramientas: React, TypeScript, Tailwind CSS.
 - Funcionalidades: React Router DOM, Zustand, Zod, Axios, Heroicons, Stores/Slices, Headless UI, API de Bebidas.
 
-Este proyecto permite buscar bebidas según sus ingredientes y categorías, además de agregarlas a favoritos y visualizarlas en una página aparte.
+Este proyecto permite buscar bebidas y alimetos según sus ingredientes y categorías, además de agregarlas a favoritos y visualizarlas en una página aparte.
 
 Características:
 
 - Consulta de bebidas a través de una API externa.
+- Consulta de recetas a través de una API externa.
 - Búsqueda por ingredientes y categorías.
 - Almacenamiento de bebidas favoritas para consulta rápida.
 - Navegación entre páginas utilizando React Router DOM.
