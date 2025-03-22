@@ -181,3 +181,29 @@ Aprendizajes clave:
 - Validación de datos con Zod para evitar errores en las consultas.
 - Uso de Zustand para la gestión de estado global.
 - Manejo de efectos y estados con useEffect y useState.
+
+**7. Buscador de Bebidas 🍹🔎**
+
+Tecnologías utilizadas:
+
+- Lenguajes y herramientas: React, TypeScript, Tailwind CSS.
+- Funcionalidades: React Router DOM, Zustand, Zod, Axios, Heroicons, Stores/Slices, Headless UI, API de Bebidas.
+
+Este proyecto permite buscar bebidas según sus ingredientes y categorías, además de agregarlas a favoritos y visualizarlas en una página aparte.
+
+Características:
+
+- Consulta de bebidas a través de una API externa.
+- Búsqueda por ingredientes y categorías.
+- Almacenamiento de bebidas favoritas para consulta rápida.
+- Navegación entre páginas utilizando React Router DOM.
+- Interfaz moderna y accesible con Headless UI y Tailwind CSS.
+
+Aprendizajes clave:
+
+- Uso de React Router DOM para la navegación entre páginas.
+- Implementación de Zustand con Stores y Slices para la gestión de estado global.
+- Validación de datos con Zod para asegurar la integridad de la información.
+- Consumo de APIs externas con Axios de manera eficiente.
+- Implementación de Headless UI para mejorar la experiencia de usuario.
+- Uso de Heroicons para mejorar la interfaz visual.
